@@ -16,7 +16,7 @@
 <td>
     {#each escenarios as escena}
         {#if escena.dias.charAt(dia) == "1"}
-            #{escena.id} ${calcDiario(escena)} ({escena.horas} horas).
+            #{escena.id} ${calcDiario(escena)} ({escena.horas} hours).
             <br />
         {/if}
     {/each}

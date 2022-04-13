@@ -3,7 +3,7 @@
 
     let work = "";
     let semanal = 0;
-    let days = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
+    let days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
     for (let i = 0; i < escena.dias.length; i++) {
         if(escena.dias.charAt(i) == '1'){
             work += " " + days[i];
@@ -15,10 +15,10 @@
 </script>
 
 <main>
-    <div>Escenario {escena.id}:</div>
-    <div>Trabajar {work}.</div>
-    <div>{escena.horas} horas al dia</div>
-    <div>Por ${semanal.toFixed(2)}/Hora (${escena.sal} al mes)</div>
+    <div>Scenario {escena.id}:</div>
+    <div>Work {work}</div>
+    <div>{escena.horas} hours per day</div>
+    <div>For ${semanal.toFixed(2)}/Hour (${escena.sal} a month)</div>
 </main>
 
 <style>
